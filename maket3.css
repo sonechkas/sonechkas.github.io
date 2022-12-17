@@ -25,6 +25,21 @@
     max-width: 1400px;
     padding: 0 1%;
 }
+.circle {
+    width: 100%;
+}
+.circle {
+    animation: circle 7.5s infinite linear;
+}
+@keyframes circle {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
 .logo {
     margin-top: 25px;
 }
@@ -57,9 +72,19 @@ button {
     color: #FFFFFF;
     font-size: 16px;
 }
+button{
+    transition-duration: 1s;
+}
+button:hover{
+    color: #f4690c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #f4690c;
+}
 .but{
     margin-top: 25px;
 }
+
+
 li:hover {
     color: #F6762C;
 }
@@ -116,7 +141,7 @@ li:hover {
     margin-bottom: 81px;
 }
 .block21 {
-    width: 100%;
+    width: 55%;
 }
 .img4{
     width: 100%;
@@ -158,10 +183,12 @@ li:hover {
     font-size: 16px;
     font-family: poppins-medium;
     margin-top: 81px;
+    transition-duration: 500ms;
 }
 .b3:hover{
     color: #190C05;
     background-color: #FFFFFF;
+    box-shadow: 5px 5px 10px #190C05;
 }
 .block21{
     margin-right: 45px;
@@ -223,6 +250,12 @@ li:hover {
 .img3 {
     width: 100%;
 }
+
+.logo:hover,
+.img:hover {
+    transform: scale(1.5, 1.5);
+}
+
 .tx11 {
     font-family: poppins-medium;
     font-size: 16px;
@@ -248,8 +281,10 @@ li:hover {
     margin-top: 40px;
 
 }
-.image {
-    margin-right: 30px;
+
+.google,
+.image  {
+    width: 100%;
 }
 .block5{
     display: flex;
@@ -286,6 +321,7 @@ li:hover {
     top: 310px;
     left: 50%;
     transform: translateX(-50%);
+    transition-duration: 500ms;
 }
 
 .block5{
@@ -314,7 +350,7 @@ li:hover {
 .tx17{
     font-family: poppins-regular;
     font-size: 16px;
-    width: 70%;
+    width: 80%;
     color: #190C05;
     opacity: 0.6;
     margin-left: 55px;
@@ -455,6 +491,12 @@ input{
         flex-direction: column;
         align-items: center;
     }
+    .block3{
+        text-align: center;
+    }
+    .block5{
+        text-align: center;
+    }
     .block311, 
     .block312,
     .block313 {
@@ -470,7 +512,7 @@ input{
     }
     .burger {
         display: flex;
-        margin-left: 500px;
+        margin-left: 205px;
         width: 80px;
         height: 80px;
         opacity: 0.8;
@@ -500,6 +542,13 @@ input{
     }
     .b1 {
         background-image: url("burger.png");
+    }
+}
+@media (max-width: 550px){
+    .img2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
