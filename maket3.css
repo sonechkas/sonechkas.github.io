@@ -106,7 +106,7 @@ li:hover {
 }
 .block12 {
     width: 766px;
-    height: 561px;
+    /*height: 561px; */
     width: 55%;
 }
 .img1{
@@ -144,7 +144,7 @@ li:hover {
     width: 55%;
 }
 .img4{
-    width: 100%;
+    width: 80%;
 }
 .block22{
     display: flex;
@@ -549,6 +549,9 @@ input{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .block1{
+        margin-bottom: 10px;
     }
 }
 
